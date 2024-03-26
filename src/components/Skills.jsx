@@ -45,10 +45,12 @@ export function Skills() {
         return (
           <div
             key={skill.id}
-            className="flex border-2 rounded-md border-black dark:border-white items-center flex-col justify-between px-4 py-2 sm:w-[calc(100%/3-10px)] m-[5px] shrink-0 w-[calc(100%/1-40px)] "
+            className="flex border-2 rounded-md border-black/20 dark:border-white/20 items-center flex-col justify-between px-4 py-3  sm:w-[calc(100%/3-20px)] sm:m-[10px] m-1 shrink-0 w-[calc(100%/1-40px)] shadow-md bg-white/30 backdrop-blur-sm dark:bg-black/30 "
           >
-            <img src={skill.image} className="w-full rounded-md " alt="" />
-            <h1 className="text-2xl font-bold text-Black dark:text-white mt-6">{skill.name}</h1>
+            <img src={skill.image} className="w-full rounded-md dark:bg-black/20 bg-white/20" alt="" />
+            <h1 className="text-2xl font-bold text-Black dark:text-white mt-6">
+              {skill.name}
+            </h1>
           </div>
         );
       })}
