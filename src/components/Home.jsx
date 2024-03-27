@@ -8,7 +8,7 @@ import Slider from "./Slider";
 
 export function Home() {
   return (
-    <div className="relative w-full bg-white dark:bg-gray-800 mt-20">
+    <div className="relative  mx-auto bg-white dark:bg-gray-800 mt-20">
       <div className="flex justify-center items-center flex-wrap md:flex-nowrap flex-col-reverse sm:flex-row md:justify-between">
         <div className="flex flex-col justify-end md:py-16 lg:mb-20 items-start sm:w-[50%] w-full">
           <h1 className="sm:mt-1 xl:mt-15  text-[1.7rem] text-start font-bold tracking-tight text-black/50 md:text-4xl lg:text-5xl dark:text-white/50 sm:text-3xl mt-10 ">

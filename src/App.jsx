@@ -40,7 +40,9 @@ function App() {
 
   return (
     <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
-      <RouterProvider router={router} />
+      <div className="w-[90%] mx-auto">
+        <RouterProvider router={router} />
+      </div>
     </ThemeProvider>
   );
 }
