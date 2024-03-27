@@ -33,7 +33,7 @@ export default function About() {
         </div>
       </div>
 
-      <TopBanner
+      {/* <TopBanner
         name="Education"
         description="I have completed my Metriculation level from SSCG(Scholar Science
             Cadet Ghakar) & my Intermediate from Aspire College Wazirabad."
@@ -55,7 +55,7 @@ export default function About() {
             </div>
           ))}
         </dl>
-      </div>
+      </div> */}
     </>
   );
 }

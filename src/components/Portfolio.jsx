@@ -43,7 +43,7 @@ export default function Portfolio() {
         className="sm:my-4  sm:mt-20"
       />
 
-      <div className="flex sm:flex-wrap overflow-x-scroll  justify-start bg-black/30 dark:bg-white/30 rounded-lg sm:p-10 sm:pt-20 p-2">
+      <div className="flex sm:flex-wrap overflow-x-scroll  justify-start bg-black/30 dark:bg-white/30 rounded-lg sm:p-10 p-2">
         {Portfolio.map((item) => (
           <div
             key={item.title}
