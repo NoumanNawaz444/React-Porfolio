@@ -5,10 +5,10 @@ import ThemeBtn from "./ThemeBtn";
 import { NavLink } from "react-router-dom";
 
 const navigation = [
-  { id : 1 ,  name: "Home", href: "/", current: true },
-  { id : 2 , name: "About", href: "/about", current: false },
-  { id : 3 ,  name: "PortFolio", href: "/portfolio", current: false },
-  { id : 4 ,  name: "Contact", href: "/contact", current: false },
+  { id: 1, name: "Home", href: "/", current: true },
+  { id: 2, name: "About", href: "/about", current: false },
+  { id: 3, name: "PortFolio", href: "/portfolio", current: false },
+  { id: 4, name: "Contact", href: "/contact", current: false },
 ];
 
 // function classNames(...classes) {
@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="bg-white dark:bg-gray-800 rounded-md shadow-lg   sm:my-[20px] my-6 border-2 border-black/20 dark:border-white/20 fixed top-0 sm:left-[5%] z-50 sm:w-[calc(90%)] w-[90%] left[5%] "
+      className="bg-white dark:bg-gray-800 rounded-md shadow-lg   sm:my-[20px] my-6 border-2 border-black/20 dark:border-white/20 fixed top-0 left-[5%] z-50 w-[calc(90%)] "
     >
       {({ open }) => (
         <>
@@ -82,21 +82,24 @@ export default function Navbar() {
           <Disclosure.Panel className="md:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2 rounded-md bg-white dark:bg-gray-800 shadow-lg outline-none duration-400 ">
               {navigation.map((item) => (
-                <Disclosure.Button className="flex flex-col w-full text-start outline-none duration-300" key={item.id} >
+                <Disclosure.Button
+                  className="flex flex-col w-full text-start outline-none duration-300"
+                  key={item.id}
+                >
                   <NavLink
-                        key={item.id}
-                        to={item.href}
-                        className={({ isActive }) =>
-                          `block py-2 pr-4 pl-3 ${
-                            isActive
-                              ? "bg-white dark:bg-black/20 dark:text-white  shadow-md text-black border-2 border-black/20 dark:border-white/20"
-                              : "text-gray-500 hover:shadow-md"
-                          }  rounded-md px-3 py-2 text-sm font-medium 0 w-full`
-                        }
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        {item.name}
-                      </NavLink>
+                    key={item.id}
+                    to={item.href}
+                    className={({ isActive }) =>
+                      `block py-2 pr-4 pl-3 ${
+                        isActive
+                          ? "bg-white dark:bg-black/20 dark:text-white  shadow-md text-black border-2 border-black/20 dark:border-white/20"
+                          : "text-gray-500 hover:shadow-md"
+                      }  rounded-md px-3 py-2 text-sm font-medium 0 w-full`
+                    }
+                    aria-current={item.current ? "page" : undefined}
+                  >
+                    {item.name}
+                  </NavLink>
                 </Disclosure.Button>
               ))}
             </div>
