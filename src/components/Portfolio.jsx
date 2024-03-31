@@ -1,8 +1,14 @@
 import React from "react";
 import TopBanner from "./TopBanner";
+import easyGrad from "../assets/images/easyGard.png";
 
 export default function Portfolio() {
   const Portfolio = [
+    {
+      title: "EasyGrad",
+      image: easyGrad,
+      live: "https://easy-grad-com.vercel.app/",
+    },
     {
       title: "Project Tom",
       image:
@@ -49,7 +55,7 @@ export default function Portfolio() {
             key={item.title}
             className="rounded-md  p-4 md:w-[calc(100%/3-20px)] sm:w-[calc(100%/2-20px)]  w-[calc(100%/1-40px)] sm:m-[10px] m-1  bg-white/30  dark:bg-black/30 backdrop-blur-sm border-2 border-black/20 dark:border-white/20 shrink-0"
           >
-            <img src={item.image} alt="Laptop" className="w-full rounded-md" />
+            <img src={item.image} alt="Laptop" className="w-full h-[50%]  rounded-md" />
             <div className="p-4">
               <h1 className="inline-flex items-center text-xl font-bold text-black dark:text-white">
                 {item.title}
